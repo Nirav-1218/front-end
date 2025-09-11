@@ -1,0 +1,330 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-image: url("/images/study.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav .logo{
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    opacity: 0.7;
+}
+.nav-list .nav-item{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.nav-item .nav-a{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none
+}
+.bar{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+.header-content{
+    color: white;
+    padding: 60px 0;
+    margin: 0 150px;
+}
+.header-content .header-h1{
+    font-size: 40px;
+    padding: 20px 0;
+}
+.header-content .header-h4{
+    font-size: 40px;
+    /* padding: 20px 0; */
+}
+.header-content .header-p{
+    width: 40%;
+    font-size: 20px;
+}
+.header-content .header-btn{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    background-color: rgb(198, 18, 18);
+    color: white;
+    margin: 20px 0;
+}
+.main{
+}
+.main .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    
+}
+.row .col{
+    width: 350px;
+    height: 240px;
+    background-color: rgb(198, 18, 18);
+    border-radius: 10px;
+    padding: 20px 0;
+    }
+
+
+.col .fa-solid{
+    color: white;
+    font-size: 30px;
+    margin: 0px auto;
+    position: relative;
+    left: 150px;
+}
+.row .col .main-h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.row .col .main-p{
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+}
+#sec1{
+    background-color: black;
+    padding: 30px 0;
+}
+#sec1 .row{
+    display: flex;
+    gap: 30px;
+}
+#sec1 .row .col2{
+    width: 30%;
+    /* border: 2px solid white; */
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+}
+.row .col2 .sec1-h4{
+    margin-top: 20px;
+
+}
+#sec1 .row .col3{
+    width: 70%;
+    /* border: 2px solid white; */
+}
+.sec1-btn{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+}
+.row .col3{
+    display: flex;
+    gap: 30px;
+}
+.row .col4{
+    width: 50%;
+    height: 300px;
+    background-color: white;
+    /* border: 2px solid red; */
+}
+.row .col5{
+    width: 50%;
+     height: 300px;
+    background-color: white;
+    /* border: 2px solid red; */
+}
+.col4 .img{
+    width: 100%;
+    height: 300px;
+
+}
+.col5 .img{
+    height: 300px;
+}
+.col4-h3{
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    bottom: 140px;
+}
+.col4-p{
+    /* width: 50%; */
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+}
+.main2{
+    display: flex;
+    justify-content: flex-end;
+}
+.main2 .row .col4{
+    width: 500px;
+    height: 300px;
+}
+.main2 .row .col5{
+    width: 500px;
+    height: 300px;
+}
+#sec2{
+    background-image: url("/images/study.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 90%;
+}
+.main2 .row{
+    display: flex;
+}
+.row .col6{
+    width: 50%;
+    border: 2px solid red;
+
+}
+.row .col7{
+    width: 50%;
+    border: 2px solid red;
+}
+
+.sec4{
+    padding: 20px;
+    background: black;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec4-h3{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 20px;
+}
+.sec4-col{
+    width: 25%;
+}
+/* sec5 */
+.sec5{
+    background: url(https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_21/3359781/200521-college-student-laptop-stock-cs-419p.jpg);
+    background-size: 100% 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec5-col{
+    width: 50%;
+    padding: 40px;
+}
+.sec5-h1{
+    font-size: clamp(15px, 4vw, 33px);
+    color: white;
+    text-transform: uppercase;
+    padding: 40px 0px;
+}
+.wrap-row{
+    margin: 50px 0px;
+    display: flex;
+    column-gap: 50px;
+}
+.wrap-col{
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    background: rgba(78, 73, 73, 0.4);
+    border-radius: 20px;
+}
+.sec5-h3{
+    font-size: clamp(12px, 3vw, 33px);
+    color: orange;
+}
+.sec5-h5{
+    font-size: clamp(10px, 3vw, 20px);
+    color: white;
+}
+
+/* sec6 */
+
+.sec6{
+    background: black;
+}
+.sec6-form{
+    background: white;
+    border-radius: 20px;
+}
+h1{
+    text-transform: uppercase;
+    padding: 40px;
+}
+.sec6-col{
+    width: 70%;
+    padding: 20px;
+}
+.sec6-tb{
+    padding: 10px;
+}
+.sec6-tb th{
+    padding: 10px;
+}
+button{
+    padding: 5px 10px;
+    color: white;
+    background: maroon;
+    border: none;
+    border-radius: 30px;
+}
+.sec6-wrap{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: maroon;
+    border-radius: 20px;
+}
+.sec6wrap-col{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+.wrapcol{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+.wrapcol2{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    width: 90%;
+}
+
+

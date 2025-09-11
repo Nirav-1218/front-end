@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 1</title>
+</head>
+<body>
+	<form>
+		<table align="center" cellpadding="10">
+		<caption><h3>Contact Form</h3></caption>
+			<tr>
+				<td><label>Full Name</label></td>
+				<td><input type="text" required pattern="[A-Za-z] {3,9}" maxlength="9" placeholder="Full Name"></td>
+			</tr>
+
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type="Email"  pattern="[a-z0-9]+@+[a-z]+.+[a-z]{2,3}$" placeholder="Email"></td>
+			</tr>
+
+			<tr>
+				<td><label>Phone Number</label></td>
+				<td><input type="tel" required pattern="[789][0-9]{9}" maxlength="10" placeholder="Phone Number"></td>
+
+			</tr>
+
+			<tr>
+				<td>Subject</td>
+				<td><select>
+					<option value="" hidden="">Select Subject</option>
+					<option value="">Stat</option>
+					<option value="">Eco</option>
+					<option value="">Maths</option>
+					<option value="">English</option>
+				</select>
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td>Message</td>
+				<td><textarea cols="30" rows="6">Message</textarea></td>
+			</tr>
+			<tr>
+				<td align="Center"><button>Submit</button></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

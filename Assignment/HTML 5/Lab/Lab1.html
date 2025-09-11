@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+     <audio src="/Assignment/HTML 5/LAB/haunted-mobile-homes-larry-weaver-comedy.mp3" controls autoplay loop></audio>
+
+     
+     <video width="200px" src="/Assignment/HTML 5/LAB/100298-video-720.mp4" controls autoplay loop></video>
+
+    <h2>Create some shape by using canvas tag</h2>
+    <canvas id="GFG" width="400" height="200">
+    </canvas>
+
+    <script>
+        let g = document.getElementById("GFG");
+        let geeks = g.getContext("2d");
+        geeks.shadowBlur = 20;
+        geeks.shadowColor = "red";
+        geeks.fillStyle = "yellow";
+        geeks.fillRect(30, 20, 100, 80);
+    </script>
+
+    <h2>Create some shape by using svg tag</h2>
+    <svg width="200" height="200" style="border: 2px solid rgb(66, 27, 27);">
+        <circle cx="85" cy="90" r="75" stroke="red" stroke-width="5" fill="yellowgreen" />
+    </svg>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{}
+
+        body{
+            background: lightcoral  ;
+        }
+
+        .card{
+            margin-top: 100px;
+            margin: 20px auto;
+            height: 550px;
+            width: 350px;
+            border-radius: 10px;
+            position: relative;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            
+        }
+        .card-name{
+            font-size: 30px;
+            color: rgb(29, 29, 65);
+            background: white;
+            padding: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+       
+        .row{
+            display: flex;
+            padding: 20px;
+        }
+
+
+        .col{
+            width: 33.33%;
+        }
+
+        .col-h3{
+            color: white;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .button{
+            text-align: center;
+        }
+
+        .card-btn{
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            margin: 0px 10px;
+            text-transform: capitalize;
+        }
+
+        .card-img{
+            position: absolute;
+            top: 25%;
+            right: 30%;
+            height: 120px;
+            width: 150px    ;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="card">
+        <h1 class="card-name">Nirav Gujariya</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati beatae ducimus consectetur. Saepe enim natus, itaque voluptates labore sint inventore dolore corporis, facilis sunt quam et voluptatibus totam tempore.</p>
+
+        <div class="row">
+            <div class="col">
+                <h3 class="col-h3">115</h3>
+                <h3 class="col-h3">Post</h3>
+            </div>
+
+            <div class="col">
+                 <h3 class="col-h3">465</h3>
+                <h3 class="col-h3">Followers</h3>
+                
+            </div>
+
+            <div class="col">
+                 <h3 class="col-h3">169</h3>
+                <h3 class="col-h3">Following</h3>
+            </div>         
+        </div>
+        <div class="button">
+            <button style="color: white; background-color: blue;" class="card-btn">Follow</button>
+            <button class="card-btn">Message</button>
+        </div>
+        <div class="card-img">
+            <img class="img" height="100%" width="100%"
+            src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?_gl=1*lb4btq*_ga*MTQ2MjMxODM3Ny4xNzU2ODE0MzIy*_ga_8JE65Q40S6*czE3NTY4MTQzMjIkbzEkZzAkdDE3NTY4MTQzMjIkajYwJGwwJGgw" alt="">
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

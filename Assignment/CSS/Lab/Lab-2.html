@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background: black;
+        }
+        .main{}
+
+        .card{
+            margin: 20px auto ;
+            margin-top: 100px;
+            height: 550px;
+            width: 350px;
+            border-radius: 10px;
+            position: relative;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+
+        .card-name{
+            font-size: 25px;
+            color: rgb(29, 29, 65);
+            background: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        .card-p{
+            margin: 50% 20px;
+            margin-bottom: 0;
+            padding: 10px;
+            color: white;
+        }
+
+        .row{
+            display: flex;
+            padding: 20px;
+        }
+
+        .col{
+            width: 33.33%;
+        }
+
+        .col-h3{
+            color: white;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .button{
+            text-align: center;
+        }
+
+        .card-btn{
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            margin: 0px 10px;
+            text-transform: capitalize;
+        }
+
+        .card-img{
+            position: absolute;
+            top: 25%;
+            right: 30%;
+            height: 120px;
+            width: 150px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <h1 class="card-name">Nirav Gujariya</h1>
+            <p class="card-p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque commodi fugiat cupiditate! Dolor perferendis tempore sapiente eveniet, molestias illum ipsam neque? Modi, cupiditate quisquam. Repellendus laboriosam sunt nobis magni esse?
+            </p>
+
+            <div class="row">
+                <div class="col">
+                    <h3 class="col-h3">128</h3>
+                    <h3 class="col-h3">Posts</h3>
+                </div>
+                <div class="col">
+                    <h3 class="col-h3">520</h3>
+                    <h3 class="col-h3">Followers</h3>
+                </div>
+                <div class="col">
+                    <h3 class="col-h3">210</h3>
+                    <h3 class="col-h3">Followings</h3>
+                </div>
+            </div>
+
+                <div class="button">
+                    <button style="color: white; background-color: blue;" class="card-btn">Follow</button>
+                    <button class="card-btn">Message</button>
+                </div>
+
+                <div class="card-img">
+                    <img  class ="img" height="100%" width="100%"
+                            src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?_gl=1*lb4btq*_ga*MTQ2MjMxODM3Ny4xNzU2ODE0MzIy*_ga_8JE65Q40S6*czE3NTY4MTQzMjIkbzEkZzAkdDE3NTY4MTQzMjIkajYwJGwwJGgw" alt="">
+                </div>                
+            
+        </div>
+    </div>
+</body>
+</html>
