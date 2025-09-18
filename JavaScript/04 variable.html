@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1 id="h1"></h1> 
+    <h3 id="h3"></h3>
+    <h4 id="h4"></h4>
+
+    <!-- varibale :- to store a data/value in single varibale name  -->
+
+    <!-- rules of varibale -->
+     <!-- 1) do not start with number (23name)
+     2) do not start with symbols (#asdhj,&sdj)
+     3) do not start with keyword (32 keyword), alert -->
+
+     <!-- syntax :- 
+     type varible-name = value  -->
+
+
+
+    <script>
+        // 3) types...
+
+        // 1) var = global
+        var x = 10 // delcaration allow
+        var x = 11 // re--delcaration allow
+        x = 12// re-assigenment allow
+        console.log("x =>",x)
+        document .write("X =>" ,x)
+        document .getElementById("h1").innerHTML = "value of variable is" + x
+
+        
+        // 2) let = local veribale 
+        let y = 20 // delcaration allow
+        // let y = 21 // re-delacratioon not allow
+        y = 30
+        console.log("y =>",y) 
+        document .write("Y =>" ,y)
+        document .getElementById("h3").innerHTML = "value of variable is" + y
+
+         // 3) const unique
+        const z = 50  // delcaration allow
+        // const z = 60 // re-delacratioon not allow
+        // z = 60 // re-assigenment not allow
+        console.log("z =>",z)
+        document .write("Z =>" ,z)
+        document .getElementById("h4").innerHTML = "value of variable is" + z
+
+
+
+    </script>
+</body>
+</html>

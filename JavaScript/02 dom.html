@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- dom :- document object model  -->
+    <!-- lightwight user view  -->
+
+    <h1 id="h1"></h1>
+    <h2 id="nav"></h2>
+
+    <h1 id="para"></h1>
+
+    <script>
+        // how to debug / error solve
+        console.log("hello javascript")
+        console.log("javascript")
+        console.log(10+6)
+        console.log("sum =>",2+2)
+
+        // 2) document.writein()
+        document.write("hello javasacript <br>" )
+        document.write(10+5)
+
+        document.write("<h3>hello world...</h3>")
+
+        // 3) Method innerText :- text only
+        // console.log(document .getElementById("h1"))
+        document .getElementById("h1").innerText = "hello innertext method"
+        document .getElementById("nav").innerText = "<i>hello world</i>"
+
+        // 4) innerhtml tag and text both allow
+        console.log(document .getElementById("para"))
+        document .getElementById("para").innerHTML = "<i>hello</i>"
+    </script>
+</body>
+</html>
