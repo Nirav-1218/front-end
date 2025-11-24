@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios Api3</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+
+    <script>
+
+        const htmldata =async()=>{
+            const res = await axios.get(`https://dummyjson.com/recipes`);
+            console.log(res.data.recipes)
+
+            let recdata = res.data.recipes.map((rece)=>{
+                return(
+                    `
+                       <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src=${rece.image} alt="...">
+                    <div class="card-body">
+                         <h5 class="card-title">${rece.id}</h5>
+                        <h5 class="card-title">${rece.name}</h5>
+                        <p class="card-text">$</p>
+                         <h5 class="card-title">${rece.tags}$</h5>
+                         <h5 class="card-title">${rece.rating}$</h5>
+                         <h5 class="card-title">${rece.mealType}$</h5>
+
+
+                        <a href="#" class="btn btn-success">Buy now</a>
+                        <a href="#" class="btn btn-primary">Add Cart</a>
+                    </div>
+                </div>
+            </div> 
+                    `
+                )
+
+            })
+            document.querySelector(".row").innerHTML += recdata.join("")
+        }
+        htmldata()
+
+    </script>
+    
+</body>
+</html>

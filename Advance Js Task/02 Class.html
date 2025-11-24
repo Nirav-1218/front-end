@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- class :- collection of multiple data member(varibale) and member function(function).
+    class :- it's blue print of object 
+
+    class Class-name{
+        memebr fucntion 
+        name(){
+
+            varibale 
+        }
+    }
+
+    let data = new Class-name -->
+
+
+
+<script>
+    var bankbalance = 2000
+    class Bank{
+        // member function
+        x = function Details(pin){
+            // data member
+            let bankname = "SBI"
+            let bankIFSC = "SBI00012"
+            let bankpin = "123"
+            
+
+            console.log("bank Name :",bankname)
+            console.log("bank IFSC :",bankIFSC)
+            console.log("bank pin :",bankpin)
+            // console.log("bank balance :",bankbalance)
+
+             
+        
+
+        }
+         y = function Deposit(addmoney){
+                let total = bankbalance + addmoney ;
+                console.log("Total =>",total)
+            }
+
+            withdraw(addmoney){
+                if(addmoney <=0){
+                    console.log("Amount is  unvalid")
+                }
+                else if(addmoney>bankbalance){
+                    console.log("Insufficiant Balance")
+
+                }
+                else{
+                    bankbalance-=addmoney;
+                    console.log("withdraw successfull Current Bank Balance :",bankbalance)
+                }
+                
+            }
+                checkbalance() {
+                    console.log("Current Bank Balance :", bankbalance)
+                }
+
+            }
+        
+    
+            // console.log(Bank)
+            const nirav = new Bank;
+            console.log(nirav)
+            nirav.x(1234,1000) 
+            nirav.y(1000,2000)
+            nirav.withdraw(2200)
+            nirav.checkbalance()
+            nirav.withdraw(1000)
+            nirav.withdraw(-30)
+            nirav.withdraw(900)
+            nirav.withdraw(100)
+
+
+          
+
+
+
+</script>
+
+
+</body>
+</html>

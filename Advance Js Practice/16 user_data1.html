@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user_data1</title>
+</head>
+<body>
+
+    <script>
+        function data(){
+            fetch ('data1.json',{
+                method : "GET"
+                
+
+            })
+            .then((res)=>{
+                return res.json()
+
+            })
+            .then((res)=>{
+                console.log(res.admin)
+
+                for (const Admin of res.admin) {
+                    console.log(Admin.id)
+
+                    // document.write(`<h2> id:${Admin.id} name:${Admin.name} email:${Admin.email}  </h2>`)
+                    document.write(`<h1> id : ${Admin.id} name :${Admin.name} email:${Admin.email}</h1>`)
+                    
+                }
+
+                for (const User of res.users) {
+                    console.log(User.id)
+                     document.write(`<h1> id : ${User.id} name :${User.name} course:${User.course}</h1>`)
+                }
+            })
+            
+
+        }data()
+        
+    </script>
+</body>
+</html>

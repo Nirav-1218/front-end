@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+
+            body {
+                align-content: center;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .container {
+                width: 350px;
+                padding: 10px;
+                margin: auto;
+                border-radius: 10px;
+                box-shadow: 0px 0px 3px #333;
+                text-align: center;
+            }
+
+            input{
+                outline: none;
+                border: none;
+                border: 2px solid red;
+                padding: .5vw 1vw;
+                border-radius: 25px;
+                width: 70%;
+            }
+
+            button{
+                border: none;
+                border-radius: 50%;
+                font-size: 20px;
+                background-color: green;
+                color: white;
+                cursor: pointer;
+            }
+            
+            .inp-btn{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .profile{
+                width: 150px;
+                height: 200px;
+                overflow: hidden;
+                margin: auto;
+            }
+
+            .profile img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .btm-part{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inp-btn">
+            <input type="text" placeholder="Enter City Name">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="cel">
+            <div class="profile">
+                <img src="https://img.freepik.com/premium-vector/weather-forecast-partly-sunny-icon-color-vector-illustration_755164-2407.jpg" alt="">
+            </div>
+            <h1>21 <sup>.C</sup></h1>
+            <p>Bhavnagar</p>
+        </div>
+        <div class="btm-part">
+            <div class="left">
+                <h2>25%</h2>
+                <p>Humanity</p>
+            </div>
+            <div class="right">
+                <h2>12.5</h2>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+
+    
+<script>
+
+     // https://api.openweathermap.org/data/2.5/weather?q=ahmedabad&appid=e10d71428413d1d641987ff9efc58b97&units=metric
+
+        //open weather api
+        // &appid=e10d71428413d1d641987ff9efc58b97
+    
+    let apikey = "5504664e70c2fe48c88d30f72c3decdc"
+
+    let apiid = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q="
+
+    let searchinp = document.querySelector(".search input")
+
+    let searchbtn = document.querySelector(".search button")
+
+    async function weather(city) {
+        const res = await fetch(apiid + city + &apiid=${apikey})
+
+        const result = await res.json()
+
+        console.log(result)
+
+        document.querySelector(".city").innerHTML = result.name;
+        document.querySelector(".temp").innerHTML = Math.round(result.main.temp) + "°C"
+            document.querySelector(".humidity").innerHTML = result.main.humidity + " %";
+            document.querySelector(".wind").innerHTML = result.wind.speed + " Km/h";
+
+            document.querySelector(".weather").style.display = "block"
+        
+    }searchbtn.addEventListener("click",()=>{
+        weather(searchinp.value)
+    })
+
+
+</script>
+
+
+
+</body>
+
+</html>

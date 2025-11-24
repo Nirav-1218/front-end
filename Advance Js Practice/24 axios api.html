@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios Api</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    
+    }
+    body{
+        display: flex;
+    }
+    .card{
+    
+        width: 350px;
+        height: 500px;
+        text-align: center;margin: 10px 0px ;
+
+    }
+    button{
+        background-color: blue;
+        color: white;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+
+    
+    <script>
+        const fetdata =async()=>{
+            const res = await axios.get("https://691c49933aaeed735c903d9c.mockapi.io/Products")
+            console.log(res.data)
+            let htmldata = res.data.map((dets)=>{
+
+                
+                
+                // document.writeln(`<h2>id : ${data.id}</h2>`)
+                // document.writeln(`<h2>items : ${data.items}</h2>`)
+                // document.writeln(`<h2>price : ${data.price}</h2>`)
+                // document.writeln(`<h2>rank : ${data.rank}</h2>`)
+                
+                
+                return (
+                `
+                      <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src=${dets.image} alt="...">
+                    <div class="card-body">
+                         <h5 class="card-title">${dets.id}</h5>
+                        <h5 class="card-title">${dets.items}</h5>
+                        <p class="card-text">$</p>
+                         <h5 class="card-title">${dets.price}$</h5>
+                         <h5 class="card-title">${dets.rank}$</h5>
+                         <button>Shop Now</button>
+                         </div> 
+                         </div> 
+                         </div> 
+
+                `
+            )
+            })
+            document.querySelector(".row").innerHTML += htmldata.join("")
+            }
+            fetdata()
+        
+        // fetdata()
+        </script>
+        
+    
+</body>
+</html>
